@@ -1,7 +1,7 @@
 .logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     
 }
 
@@ -11,5 +11,78 @@ display: block;
 }
 
 #map {
-    padding-left: 80%;
+  padding-left: 80%;
 }
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  display: flex;
+}
+
+#zoo_areal {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  justify-content: center;
+}
+
+
+#col {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#table {
+  width: 65%;
+  margin: 3%;
+
+}
+
+#tickets {
+  display: flex;
+  flex-direction: row;
+}
+
+#cart {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+#button {
+  margin-left: 5%;
+  width: 90%;
+}
+
+#icon{
+  display: flex;
+  justify-content: right;
+
+}
+
+.fw-bolder {
+  font-size: xxx-large;
+}
+
+#entrance {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
