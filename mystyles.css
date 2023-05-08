@@ -1,0 +1,15 @@
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#logo {
+  padding-left: 10%;
+display: block;
+}
+
+#map {
+    padding-left: 80%;
+}
