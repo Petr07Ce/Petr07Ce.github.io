@@ -74,10 +74,30 @@ display: block;
   justify-content: center;
 }
 
+#alien_facts {
+  width: 30%;
+  margin: 3%;
+}
 
+#carousel {
+  width: 25%;
+  height: 20%;
+}
 
+#alien_format {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+#greenm {
+  margin-left: 15%;
+}
 
+#slitheen {
+  margin-left: 10%;
+}
 
 
 
