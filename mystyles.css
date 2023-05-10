@@ -16,6 +16,11 @@ display: block;
   justify-content: space-around;
 }
 
+#footertitel {
+  display: flex;
+  margin-left: 50%;
+}
+
 #map {
   padding-left: 80%;
 }
