@@ -2,12 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-    
+  padding-left: 25%;
+  
 }
 
 #logo {
-  padding-left: 10%;
 display: block;
+
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
 }
 
 #map {
