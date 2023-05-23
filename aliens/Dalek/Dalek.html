@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../mystyles.css"></link>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <title>Dalek</title>
+    <link rel="icon" href="../../Wireframe/icon.png">
+
+    <title>Alien zoo</title>
 </head>
-<body style="background-color:#085f8f;">
+<body style="background-color: #085f8f;">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand ml-3"><img src="../../Wireframe/Logos/Logo.PNG" width="50px" height="50px"></img></a>
+    <a class="navbar-brand"><img src="../../Wireframe/Logos/Logo.PNG" width="50px" height="50px"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,11 +47,9 @@
           <a class="nav-link" href="../../Tickets/BuyTickets.html">Tickets</a>
         </li>
 
-        <!--
         <li class="nav-item">
-          <a class="nav-link" href="../Souvenir/Souvenirs.html">Souvenirs</a>
+          <a class="nav-link" href="../../Souvenir/Souvenirs.html">Souvenirs</a>
         </li>
-        -->
 
         <li class="nav-item">
           <a class="nav-link" href="../../Bar/Bar.html">Bar</a>
@@ -104,47 +105,36 @@
 
 
 
-    <img src="../Dalek/images/universe.png" width="35%">
+    <img class="location" src="../Dalek/images/universe.png" width="35%">
 
 
 
     <div id="carousel">
-      <div id="carouselExample" class="carousel slide">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../Dalek/images/3_daleks.png" class="d-block w-15">
+            <img src="../Dalek/images/3_daleks.png" class="d-block w-15 img-fluid" width="100%">
           </div>
           <div class="carousel-item">
-            <img src="../Dalek/images/dalek_open.png" class="d-block w-15">
+            <img src="../Dalek/images/dalek_open.png" class="d-block w-15 img-fluid"  width="100%">
           </div>
           <div class="carousel-item">
-            <img src="../Dalek/images/dalek_trapped.png" class="d-block w-15">
+            <img src="../Dalek/images/dalek_trapped.png" class="d-block w-15 img-fluid"  width="100%">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </div>
 
 
-    
-
-
-
-
-
-
-
-
-
-
   
 
 
@@ -153,15 +143,14 @@
 
 
 
-
-
-  <footer class="text-center text-lg-start bg-white text-muted ">
+  <footer class="text-center text-lg-start bg-white text-muted">
     
     <div>
   
-      <section>
+      <section class="">
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3" id="footer">
+
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">
                 <i class="fas fa-gem me-3 text-secondary" id="footertitel"></i>Cosmic Creatures
@@ -170,55 +159,6 @@
                 Discover our fascinating collection of extraterrestrial life forms at the Alienzoo! 
                 Immerse yourself in the world of interstellar fauna and expand your understanding of extraterrestrial life.
               </p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="logo">
-                
-                <h6 class="text-uppercase fw-bold mb-4" >
-                Supporters
-                </h6>
-                <div>
-                    <div class="logos">
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/amazoncom_moneyzgonecom.jpg"></img>
-                        </p>
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/burger-king_tomato-king.jpg"></img>
-                        </p>
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/jurassic-park_yoshis-island.jpg"></img>
-                        </p>
-                    </div>
-                    <div class="logos">
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/puma_coma.jpg"></img>
-                        </p>
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/shell_hell.jpg"></img>
-                        </p>
-                        <p>
-                            <img width="120px" height="90px" src="../../Wireframe/Logos/starbucks-coffee_star-wars-coffee.jpg"></img>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-    
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="logo">
-                  <h6 class="text-uppercase fw-bold mb-4" id="footertitel">
-                  Links&Location
-                  </h6>
-                  <div id="map">
-                      <p>
-                      <a href="../../Link/Links.html" class="text-reset">Links</a>
-                      </p>
-                      <p>
-                      <a href="../../DSB/Datenschutzbestimmung.html" class="text-reset">DSB</a>
-                      </p>
-                      <p>
-                          <a href="https://www.google.com/maps/place/Ilha+Martin+Vaz,+Vit%C3%B3ria+-+State+of+Esp%C3%ADrito+Santo,+Brazil/@-20.4752437,-28.8618159,15z/data=!3m1!4b1!4m6!3m5!1s0x13565e1a94f36a7:0xa27b7722c4c2a74c!8m2!3d-20.4752645!4d-28.8515162!16s%2Fg%2F1ymsqxtdf"><img src="../../Wireframe/map.png" width="50px" height="50px"></img></a>
-                      </p>
-                  </div>
             </div>
     
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="logo">
@@ -230,12 +170,60 @@
               </p>
               <p><i class="fas fa-phone me-3 text-secondary"></i> +41 78 209 74 25</p>
             </div>
+    
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="logo">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                  Links&Location
+                  </h6>
+                  <div>
+                      <p>
+                      <a href="../../Link/Links.html" class="text-reset">Links</a>
+                      </p>
+                      <p>
+                      <a href="../../DSB/Datenschutzbestimmung.html" class="text-reset">DSB</a>
+                      </p>
+                      <p>
+                          <a href="https://www.google.com/maps/place/Ilha+Martin+Vaz,+Vit%C3%B3ria+-+State+of+Esp%C3%ADrito+Santo,+Brazil/@-20.4752437,-28.8618159,15z/data=!3m1!4b1!4m6!3m5!1s0x13565e1a94f36a7:0xa27b7722c4c2a74c!8m2!3d-20.4752645!4d-28.8515162!16s%2Fg%2F1ymsqxtdf"><img src="../../Wireframe/map.png" width="50px" height="50px"></img></a>
+                      </p>
+                  </div>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="logo">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Supporters
+              </h6>
+              <div>
+                  <div class="logos">
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/amazoncom_moneyzgonecom.jpg"></img>
+                      </p>
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/burger-king_tomato-king.jpg"></img>
+                      </p>
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/jurassic-park_yoshis-island.jpg"></img>
+                      </p>
+                  </div>
+                  <div class="logos">
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/puma_coma.jpg"></img>
+                      </p>
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/shell_hell.jpg"></img>
+                      </p>
+                      <p>
+                          <img class="img-fluide img-responsive" width="120px" height="90px" src="../../Wireframe/Logos/starbucks-coffee_star-wars-coffee.jpg"></img>
+                      </p>
+                  </div>
+              </div>
+          </div>
+
           </div>
         </div>
       </section>
     </div>
     
-  </footer>
+  </footer> 
 </body>
 </html>
 

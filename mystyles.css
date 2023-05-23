@@ -1,28 +1,15 @@
 .logos {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-left: 25%;
-  
 }
 
 #logo {
-display: block;
-
+  display: block;
 }
 
 #footer {
   display: flex;
   justify-content: space-around;
-}
-
-#footertitel {
-  display: flex;
-  margin-left: 50%;
-}
-
-#map {
-  padding-left: 80%;
 }
 
 #title {
@@ -37,8 +24,9 @@ display: block;
 #zoo_areal {
   display: flex;
   flex-direction: row;
-  padding-top: 2%;
+  padding: 2%;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -49,20 +37,19 @@ display: block;
 }
 
 #table {
-  width: 65%;
-  margin: 3%;
-
+  padding: 3%;
 }
 
 #tickets {
   display: flex;
   flex-direction: row;
+  padding: 2%;
 }
 
 #cart {
   display: flex;
   justify-content: space-around;
-  margin: 2%;
+  padding-left: 1%;
 }
 
 #button {
@@ -91,8 +78,13 @@ display: block;
 }
 
 #carousel {
-  width: 25%;
-  height: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.location {
+  max-width: 100%;
+  height: auto;
 }
 
 #alien_format {
@@ -123,6 +115,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+}
+
+.font {
+  font-size: 0.75vw;
+
 }
 
 footer {
@@ -137,5 +135,56 @@ footer {
   padding-right: 10%;
 }
 
+
+@media only screen and (max-width: 1341px) {
+  #zoo_areal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #alien_format {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #alien_facts {
+    width: auto;
+  }
+
+  .location {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1303px) {
+  .logos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logos {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 909px) {
+  #tickets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #entrance {
+    display: flex;
+    text-align: center;
+  }
+
+}
 
 
