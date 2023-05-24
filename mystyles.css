@@ -106,7 +106,6 @@
 }
 
 #bar_format {
-
   margin-top: 0.5%;
   display: flex;
   align-items: center;
@@ -117,12 +116,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .font {
   font-size: 0.75vw;
-
 }
 
 footer {
